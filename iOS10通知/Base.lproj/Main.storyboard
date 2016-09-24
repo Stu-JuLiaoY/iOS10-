@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffa-QN-f04">
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="JdX-KM-iao"/>
+                                </constraints>
+                                <state key="normal" title="Push LocalNotification">
+                                    <color key="titleColor" red="0.72609098149999995" green="1" blue="0.3247469871" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pushLocalNotification:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7bu-6E-Ue3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1y0-Yc-fvT">
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="tgs-Yw-Ufl"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="v44-jz-Wdn"/>
+                                </constraints>
+                                <state key="normal" title="Remove PendingLocalNotification">
+                                    <color key="titleColor" red="0.72609098149999995" green="1" blue="0.3247469871" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="removeLocalNotification:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XRS-n1-DnB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R95-o9-4if">
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="8jS-9I-dCt"/>
+                                    <constraint firstAttribute="height" constant="44" id="KOU-S8-rNR"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="44" id="pwH-lc-ako"/>
+                                </constraints>
+                                <state key="normal" title="Remove DeliveredLocalNotification">
+                                    <color key="titleColor" red="0.72609098149999995" green="1" blue="0.3247469871" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="removeDeliveredLocalNotification:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oSu-yy-oRF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="amc-MC-DZf">
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="44" id="2A1-V5-QNq"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="2Ae-lg-WQh"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="44" id="NiC-4W-g8z"/>
+                                    <constraint firstAttribute="height" constant="44" id="tca-8M-o5p"/>
+                                </constraints>
+                                <state key="normal" title="Update LocalNotification">
+                                    <color key="titleColor" red="0.72609098149999995" green="1" blue="0.3247469871" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="updateLocalNotification:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o1d-W7-oxV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G9H-Bf-5hD">
+                                <color key="backgroundColor" red="0.72609098149999995" green="1" blue="0.3247469871" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="f9W-pO-1XG"/>
+                                </constraints>
+                                <state key="normal" title="Image"/>
+                                <connections>
+                                    <action selector="pushImageNotification:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gSL-GZ-SVq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FwI-Jp-kBk">
+                                <color key="backgroundColor" red="0.72609098149999995" green="1" blue="0.3247469871" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="gzR-KY-gZn"/>
+                                </constraints>
+                                <state key="normal" title="Movie"/>
+                                <connections>
+                                    <action selector="pushMovieNotification:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6zK-0L-BMp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ifM-Vk-EBo">
+                                <color key="backgroundColor" red="0.72609098149999995" green="1" blue="0.3247469871" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="b4m-wa-13B"/>
+                                </constraints>
+                                <state key="normal" title="Sound"/>
+                                <connections>
+                                    <action selector="pushSoundNotification:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b2f-L7-R19"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vzf-dM-WMx">
+                                <color key="backgroundColor" red="1" green="0.6468631284916303" blue="0.076726393103322632" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Vm0-Nv-9wK"/>
+                                </constraints>
+                                <state key="normal" title="Custom UI">
+                                    <color key="titleColor" red="1" green="0.16258153189999999" blue="0.20736726799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pushCustomUINotification:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EQY-bB-tw8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jn2-J6-1yV">
+                                <color key="backgroundColor" red="0.72609098149999995" green="1" blue="0.3247469871" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="fke-wf-Lbr"/>
+                                </constraints>
+                                <state key="normal" title="GIF"/>
+                                <connections>
+                                    <action selector="pushGIFNotification:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QlL-tG-hVW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Vzf-dM-WMx" firstAttribute="top" secondItem="FwI-Jp-kBk" secondAttribute="bottom" constant="20" id="3hY-E5-wGz"/>
+                            <constraint firstItem="Jn2-J6-1yV" firstAttribute="width" secondItem="G9H-Bf-5hD" secondAttribute="width" id="4Nn-U6-8Qp"/>
+                            <constraint firstItem="ffa-QN-f04" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="4Rf-Uy-vdV"/>
+                            <constraint firstItem="R95-o9-4if" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="Cm9-bh-t5J"/>
+                            <constraint firstItem="FwI-Jp-kBk" firstAttribute="leading" secondItem="Jn2-J6-1yV" secondAttribute="trailing" constant="10" id="EKf-jf-fMz"/>
+                            <constraint firstItem="G9H-Bf-5hD" firstAttribute="top" secondItem="amc-MC-DZf" secondAttribute="bottom" constant="20" id="ES6-0F-Ao8"/>
+                            <constraint firstItem="Jn2-J6-1yV" firstAttribute="leading" secondItem="G9H-Bf-5hD" secondAttribute="trailing" constant="10" id="Gvz-lo-cPE"/>
+                            <constraint firstItem="Jn2-J6-1yV" firstAttribute="top" secondItem="amc-MC-DZf" secondAttribute="bottom" constant="20" id="Kcg-BL-9SY"/>
+                            <constraint firstItem="ffa-QN-f04" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="LPu-nu-mAY"/>
+                            <constraint firstItem="R95-o9-4if" firstAttribute="top" secondItem="1y0-Yc-fvT" secondAttribute="bottom" constant="18" id="QMR-j3-DAO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ffa-QN-f04" secondAttribute="trailing" constant="10" id="QhZ-f5-smb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ifM-Vk-EBo" secondAttribute="trailing" constant="10" id="R3w-Sx-Ljo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="amc-MC-DZf" secondAttribute="trailing" constant="10" id="RHE-Wj-Kz4"/>
+                            <constraint firstItem="FwI-Jp-kBk" firstAttribute="top" secondItem="amc-MC-DZf" secondAttribute="bottom" constant="20" id="SY6-L7-XPd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1y0-Yc-fvT" secondAttribute="trailing" constant="10" id="VR9-V3-aZw"/>
+                            <constraint firstItem="FwI-Jp-kBk" firstAttribute="leading" secondItem="Jn2-J6-1yV" secondAttribute="trailing" constant="10" id="XR0-aW-iMW"/>
+                            <constraint firstItem="amc-MC-DZf" firstAttribute="top" secondItem="R95-o9-4if" secondAttribute="bottom" constant="18" id="YVr-D5-nCn"/>
+                            <constraint firstItem="ifM-Vk-EBo" firstAttribute="top" secondItem="amc-MC-DZf" secondAttribute="bottom" constant="20" id="a5b-Fe-e3d"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="R95-o9-4if" secondAttribute="trailing" constant="10" id="bYr-Ga-2Me"/>
+                            <constraint firstItem="FwI-Jp-kBk" firstAttribute="width" secondItem="G9H-Bf-5hD" secondAttribute="width" id="cwp-K9-7Nf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Vzf-dM-WMx" secondAttribute="trailing" constant="10" id="dVb-pQ-yAK"/>
+                            <constraint firstItem="ifM-Vk-EBo" firstAttribute="leading" secondItem="FwI-Jp-kBk" secondAttribute="trailing" constant="10" id="gsg-OC-W5T"/>
+                            <constraint firstItem="amc-MC-DZf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="hWt-oq-W5h"/>
+                            <constraint firstItem="ifM-Vk-EBo" firstAttribute="width" secondItem="G9H-Bf-5hD" secondAttribute="width" id="lWG-dl-V8F"/>
+                            <constraint firstItem="Jn2-J6-1yV" firstAttribute="leading" secondItem="G9H-Bf-5hD" secondAttribute="trailing" constant="10" id="pcD-nd-5hI"/>
+                            <constraint firstItem="1y0-Yc-fvT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="qN3-2u-OWz"/>
+                            <constraint firstItem="1y0-Yc-fvT" firstAttribute="top" secondItem="ffa-QN-f04" secondAttribute="bottom" constant="17" id="trL-sR-9fB"/>
+                            <constraint firstItem="ifM-Vk-EBo" firstAttribute="leading" secondItem="FwI-Jp-kBk" secondAttribute="trailing" constant="10" id="uLL-qd-j5n"/>
+                            <constraint firstItem="Vzf-dM-WMx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="vsj-02-0ew"/>
+                            <constraint firstItem="G9H-Bf-5hD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="y1b-pM-XnJ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="90.404797601199405"/>
+        </scene>
+    </scenes>
+</document>
